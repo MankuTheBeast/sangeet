@@ -1,0 +1,185 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #000814; /* Dark blue background color */
+}
+
+header {
+  background-color: #001d3d; /* Dark blue header background color */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main {
+  padding: 20px;
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  margin-bottom: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  .pricing {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pricing-card {
+  background-color: #ffe66c; /* Yellow background color */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.pricing-card h2 {
+  color: #001d3d; /* Dark blue heading color */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pricing-card p.price {
+  color: #001d3d; /* Dark blue price color */
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.pricing-card ul li {
+  margin-bottom: 10px;
+}
+
+.pricing-card button {
+  background-color: #001d3d; /* Yellow button color */
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-card button:hover {
+  background-color: #000814; /* Hover color for the button */
+}
+
+.schedule {
+  background-color: #f2f2f2; /* Light gray background color for the schedule section */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.schedule h2 {
+  color: #001d3d; /* Dark blue heading color */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.schedule table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule table th,
+.schedule table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.schedule table th {
+  background-color: #001d3d; /* Dark blue header background color */
+  color: #fff;
+}
+
+.active {
+  color: #ffc300;
+}
+
+footer {
+  background-color: #001d3d; /* Dark blue footer background color */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  color: #001d3d;
+  background-color: #ffe66c;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #ffc300;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #001d3d;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #f3f8f7;
+  box-shadow: inset 0 0 0 3px #fff;
+}

@@ -1,0 +1,165 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #000814; /* Dark blue background color */
+}
+
+header {
+  background-color: #001d3d; /* Dark blue header background color */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main {
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.column {
+  background-color: #ffe66c; /* Yellow background color */
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.column h2 {
+  margin-bottom: 8px;
+}
+
+.column p {
+  margin-bottom: 14px;
+}
+
+.column-img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.newsletter {
+  background-color: #001d3d; /* Dark blue newsletter background color */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter h2 {
+  margin-bottom: 10px;
+}
+
+.newsletter form {
+  margin-top: 10px;
+}
+
+.newsletter input {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: none;
+}
+
+.active {
+  color: #ffc300;
+}
+
+.newsletter button {
+  background-color: #ffc300; /* Yellow subscribe button color */
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #ffd60a; /* Hover color for the subscribe button */
+}
+
+footer {
+  background-color: #001d3d; /* Dark blue footer background color */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  color: #001d3d;
+  background-color: #ffe66c;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #ffc300;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #001d3d;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #f3f8f7;
+  box-shadow: inset 0 0 0 3px #fff;
+}

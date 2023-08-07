@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sangeet &mdash; Login Page</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/fav-icon.png" />
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo of Sangeet" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-btns">
+        <a href="login.html" class="btn btn--outline">Login</a>
+        <a href="createaccount.html" class="btn btn--full">Sign Up</a>
+      </div>
+    </header>
+
+    <main class="login-form">
+      <div class="login-container">
+        <h1 class="must">You must login to join</h1>
+        <p class="subtext">SANGEET</p>
+        <button class="google-btn">
+          <ion-icon name="logo-google"></ion-icon>
+          <div>Sign in with Google</div>
+        </button>
+        <button class="apple-btn">
+          <ion-icon name="logo-apple"></ion-icon>
+          <div>Sign in with Apple ID</div>
+        </button>
+
+        <p class="or-text">or</p>
+        <form action="#" method="post">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <div class="forgot-create-account">
+            <a href="#" class="forgot-password">Forgot password?</a>
+
+            <a href="createaccount.html" class="create-account-btn"
+              >Create an Account</a
+            >
+          </div>
+
+          <button
+            type="submit"
+            id="Submit"
+            onclick="handleLogin(); return false;"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <script src="scripts/login.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
